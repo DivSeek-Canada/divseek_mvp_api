@@ -1,0 +1,332 @@
+swagger: "2.0"
+info:
+  title: "Divseek Canada MVP application API"
+  description: "Implements all the calls necessary for finding genomic markers for germplasm, but doesn't conform to BrAPI."
+  version: "0.0.1"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "petstore.swagger.io"
+basePath: "/v2"
+definitions:
+  Germplasm:
+    type: "object"
+    required:
+    - "id"
+    - "general_identifier"
+    - "name"
+    - "taxonomy_id"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+      general_identifier:
+        type: "string"
+      taxonomy_id:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "Germplasm"
+  Taxonomy:
+    type: "object"
+    required:
+    - "taxonomy_id"
+    properties:
+      taxonomy_id:
+        type: "integer"
+        format: "int64"
+      genus:
+        type: "string"
+        example: "Helanthus"
+      species:
+        type: "string"
+        example: "Helanthus annuus"
+    xml:
+      name: "Taxonomy"
+  Query:
+    type: "object"
+    required:
+    - "id"
+    - "traitID"
+    - "germplasmID"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      traitID:
+        type: "integer"
+        format: "int64"
+      germplasmID:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "Query"
+  Locus:
+    type: "object"
+    required:
+    - "locus_id"
+    - "basepair_start"
+    - "basepair_end"
+    properties:
+      locus_id:
+        type: "integer"
+        format: "int64"
+      locus_name:
+        type: "string"
+      basepair_start:
+        type: "integer"
+        format: "int64"
+      basepair_end:
+        type: "integer"
+        format: "int64"
+      taxonomy_id:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "Locus"
+  QTL:
+    type: "object"
+    required:
+    - "qtl_id"
+    - "qtl_name"
+    - "trait_id"
+    - "locus_id"
+    properties:
+      qtl_id:
+        type: "integer"
+        format: "int64"
+      locus_name:
+        type: "string"
+      trait_id:
+        type: "integer"
+        format: "int64"
+      locus_id:
+        type: "integer"
+        format: "int64"
+    xml:
+      name: "QTL"
+  Phenotype:
+    type: "object"
+    required:
+    - "id"
+    - "phenotype_id"
+    - "germinatebase_id"
+    - "dataset_id"
+    properties:
+      trait_id:
+        type: "integer"
+        format: "int64"
+      trait_name:
+        type: "string"
+      trait_type:
+        type: "string"
+        example: "protein"
+      trait_description:
+        type: "string"
+    xml:
+      name: "Trait"
+  ApiResponse:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "string"
+      message:
+        type: "string"
+schemes:
+- "https"
+- "http"
+paths:
+  /taxon/:
+    get:
+      summary: "Returns all germplasm we have"
+      operationId: "getTaxonomy"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Taxonomy"
+  /taxon/{id}:
+    get:
+      summary: "Returns all germplasm we have"
+      operationId: "getTaxonomyById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Unique database ID for the taxonomy"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Taxonomy"
+  /germplasm/:
+    get:
+      summary: "Returns all germplasm we have"
+      operationId: "getGermplasm"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Germplasm"
+  /germplasm/{id}:
+    get:
+      summary: "Returns all germplasm we have"
+      operationId: "getGermplasmById"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Unique database ID for the germplasm"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Germplasm"
+  /germplasm/taxon/{id}:
+    get:
+      summary: "Returns all germplasm we have by taxon"
+      operationId: "getGermplasmByTaxon"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Unique database ID for the taxon"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Germplasm"
+  /trait/:
+    get:
+      summary: "Returns all phenotypes we have"
+      operationId: "getTraits"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Phenotype"
+  /trait/germplasm/{germplasmId}:
+    get:
+      summary: "Returns all phenotypes for a germplasm that we have"
+      operationId: "getTraitsByGermplasm"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "germplasmId"
+        in: "path"
+        description: "Unique database ID for the germplasm"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Phenotype"
+  /qtl/:
+    get:
+      summary: "Returns all the QTLs (Quantitative Trait Loci) we have"
+      operationId: "getQTLs"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/QTL"
+  /qtl/taxon/{taxonId}/trait/{traitId}:
+    get:
+      summary: "Returns all phenotypes for a germplasm that we have"
+      operationId: "getQTLByGermplasmTrait"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "germplasmId"
+        in: "path"
+        description: "Unique database ID for the germplasm"
+        required: true
+        type: "string"
+      - name: "traitId"
+        in: "path"
+        description: "Unique database ID for the trait in question"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/QTL"
+  /locus/qtl/{id}:
+    get:
+      summary: "Returns all phenotypes for a germplasm that we have"
+      operationId: "getLocusByQTL"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Unique database ID for the QTL"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Locus"
+  /locus/taxon/{id}:
+    get:
+      summary: "Returns all phenotypes for a germplasm that we have"
+      operationId: "getLocusByTaxon"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Unique database ID for the taaon"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Locus"

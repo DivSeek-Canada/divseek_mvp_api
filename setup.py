@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='rest_api_demo',
-    version='1.0.0',
-    description='Boilerplate code for a RESTful API based on Flask-RESTPlus',
-    url='https://github.com/postrational/rest_api_demo',
-    author='Michal Karzynski',
+    name='divseekcan_api',
+    version='0.0.1',
+    description='Divseek Canada MVP API',
+    url='',
+    author='Kenneth Bruskiewicz',
 
     classifiers=[
         'Development Status :: 5 - Production/Stable',

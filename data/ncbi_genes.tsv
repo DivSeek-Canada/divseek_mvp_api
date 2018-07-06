@@ -1,0 +1,41 @@
+tax_id	Org_name	GeneID	CurrentID	Status	Symbol	Aliases	description	other_designations	map_location	chromosome	genomic_nucleotide_accession.version	start_position_on_the_genomic_accession	end_position_on_the_genomic_accession	orientation	exon_count	OMIM	
+4232	Helianthus annuus	4055709	0	live	rbcL	HeanCp029	RuBisCO large subunit	RuBisCO large subunit|ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit			NC_007977.1	54553	56010	plus	0		
+4232	Helianthus annuus	4055708	0	live	atpB	HeanCp028	ATP synthase CF1 beta subunit				NC_007977.1	52291	53787	minus	0		
+4232	Helianthus annuus	4055710	0	live	accD	HeanCp030	acetyl-CoA carboxylase beta subunit				NC_007977.1	56577	58019	plus	0		
+4232	Helianthus annuus	4055707	0	live	atpE	HeanCp027	ATP synthase epsilon chain	ATP synthase epsilon chain|ATP synthase CF1 epsilon subunit			NC_007977.1	51893	52294	minus	0		
+4232	Helianthus annuus	4055703	0	live	ndhC	HeanCp026, ndh3	NADH dehydrogenase subunit 3				NC_007977.1	49516	49878	minus	0		
+4232	Helianthus annuus	4055701	0	live	ndhJ	HeanCp024	NADH dehydrogenase 30 kDa subunit	NADH dehydrogenase 30 kDa subunit|NADH dehydrogenase subunit J			NC_007977.1	48206	48682	minus	0		
+4232	Helianthus annuus	4055696	0	live	rpl14	HeanCp059	50S ribosomal protein L14	50S ribosomal protein L14|ribosomal protein L14			NC_007977.1	80083	80451	minus	0		
+4232	Helianthus annuus	4055695	0	live	rps8	HeanCp058	30S ribosomal protein S8	30S ribosomal protein S8|ribosomal protein S8			NC_007977.1	79473	79877	minus	0		
+4232	Helianthus annuus	4055694	0	live	infA	HeanCp057	translation initiation factor 1				NC_007977.1	79118	79351	minus	0		
+4232	Helianthus annuus	4055692	0	live	rps11	HeanCp055	30S ribosomal protein S11	30S ribosomal protein S11|ribosomal protein S11			NC_007977.1	78368	78778	minus	0		
+4232	Helianthus annuus	4055691	0	live	rpoA	HeanCp054	RNA polymerase alpha chain	RNA polymerase alpha chain|RNA polymerase alpha subunit			NC_007977.1	77263	78270	minus	0		
+4232	Helianthus annuus	4055683	0	live	rpl23	HeanCp065	50S ribosomal protein L23	50S ribosomal protein L23|ribosomal protein L23			NC_007977.1	85193	85474	minus	0		
+4232	Helianthus annuus	4055680	0	live	rpl22	HeanCp062	ribosomal protein L22				NC_007977.1	82816	83280	minus	0		
+4232	Helianthus annuus	4055677	0	live	rpl33	HeanCp042	ribosomal protein L33				NC_007977.1	67005	67205	plus	0		
+4232	Helianthus annuus	4055671	0	live	psbE	HeanCp038	cytochrome b559 alpha subunit	cytochrome b559 alpha subunit|photosystem II protein V			NC_007977.1	63814	64065	minus	0		
+4232	Helianthus annuus	4055667	0	live	petA	HeanCp034	apocytochrome f precursor	apocytochrome f precursor|cytochrome f			NC_007977.1	61519	62481	plus	0		
+4232	Helianthus annuus	4055665	0	live	psbB	HeanCp048	photosystem II P680 chlorophyll A apoprotein	photosystem II P680 chlorophyll A apoprotein|photosystem II 47 kDa protein			NC_007977.1	71779	73305	plus	0		
+4232	Helianthus annuus	4055663	0	live	rpl20	HeanCp044	50S ribosomal protein L20	50S ribosomal protein L20|ribosomal protein L20			NC_007977.1	67957	68337	minus	0		
+4232	Helianthus annuus	4055660	0	live	cemA	HeanCp033, ycf10	heme-binding protein	heme-binding protein|envelope membrane protein			NC_007977.1	60614	61303	plus	0		
+4232	Helianthus annuus	4055659	0	live	ycf4	HeanCp032	photosystem I assembly protein Ycf4				NC_007977.1	59215	59769	plus	0		
+4232	Helianthus annuus	4055650	0	live	rps7	HeanCp068	30S ribosomal protein S7	30S ribosomal protein S7|ribosomal protein S7			NC_007977.1	95759	96226	minus	0		
+4232	Helianthus annuus	4055638	0	live	matK	HeanCp002	maturase K				NC_007977.1	2065	3567	minus	0		
+4232	Helianthus annuus	4055636	0	live	psbA	HeanCp001	photosystem II protein D1				NC_007977.1	464	1525	minus	0		
+4232	Helianthus annuus	4055631	0	live	ndhF	HeanCp081, ndh5	NADH dehydrogenase subunit 5				NC_007977.1	124170	126401	plus	0		
+4232	Helianthus annuus	4055630	0	live	rpl32	HeanCp080	ribosomal protein L32				NC_007977.1	123147	123311	minus	0		
+4232	Helianthus annuus	4055628	0	live	ccsA	HeanCp079, ycf5	cytochrome c biogenesis protein				NC_007977.1	121208	122176	minus	0		
+4232	Helianthus annuus	4055626	0	live	psaC	HeanCp077	photosystem I iron-sulfur center	photosystem I iron-sulfur center|photosystem I subunit VII			NC_007977.1	119076	119321	plus	0		
+4232	Helianthus annuus	4055625	0	live	ndhE	HeanCp076, ndh4L	NADH dehydrogenase subunit 4L				NC_007977.1	118552	118857	plus	0		
+4232	Helianthus annuus	4055624	0	live	ndhG	HeanCp075	NADH dehydrogenase subunit 6				NC_007977.1	117810	118340	plus	0		
+4232	Helianthus annuus	4055623	0	live	ndhI	HeanCp074, frxB	NADH dehydrogenase 18 kDa subunit	NADH dehydrogenase 18 kDa subunit|NADH dehydrogenase subunit I			NC_007977.1	116927	117427	plus	0		
+4232	Helianthus annuus	4055610	0	live	rps18	HeanCp043	30S ribosomal protein S18	30S ribosomal protein S18|ribosomal protein S18			NC_007977.1	67390	67695	plus	0		
+4232	Helianthus annuus	4055609	0	live	rps3	HeanCp061	30S ribosomal protein S3	30S ribosomal protein S3|ribosomal protein S3			NC_007977.1	82175	82831	minus	0		
+4232	Helianthus annuus	4055604	0	live	rpl23	HeanCp087	50S ribosomal protein L23	50S ribosomal protein L23|ribosomal protein L23			NC_007977.1	149161	149442	plus	0		
+4232	Helianthus annuus	4055599	0	live	rps7	HeanCp084	30S ribosomal protein S7	30S ribosomal protein S7|ribosomal protein S7			NC_007977.1	138409	138876	plus	0		
+4232	Helianthus annuus	4055595	0	live	rps4	HeanCp023	ribosomal protein S4				NC_007977.1	45454	46059	minus	0		
+4232	Helianthus annuus	4055590	0	live	rps14	HeanCp019	30S ribosomal protein S14	30S ribosomal protein S14|ribosomal protein S14			NC_007977.1	36609	36911	minus	0		
+4232	Helianthus annuus	4055587	0	live	psbZ	HeanCp018	photosystem II reaction center Z protein	photosystem II reaction center Z protein|photosystem II protein Z			NC_007977.1	35601	35789	plus	0		
+4232	Helianthus annuus	4055584	0	live	psbD	HeanCp016	photosystem II protein D2				NC_007977.1	32496	33557	plus	0		
+4232	Helianthus annuus	4055579	0	live	atpA	HeanCp015	ATP synthase CF1 alpha subunit				NC_007977.1	28412	29938	plus	0		
+4232	Helianthus annuus	4055577	0	live	atpH	HeanCp013	ATPase III subunit	ATPase III subunit|ATP synthase CF0 C subunit			NC_007977.1	26442	26687	plus	0		
