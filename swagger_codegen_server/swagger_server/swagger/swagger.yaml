@@ -7,12 +7,12 @@ info:
   title: "Divseek Canada MVP application API"
   termsOfService: "http://swagger.io/terms/"
   contact:
-    email: "apiteam@swagger.io"
+    email: "kenneth@starinformatics.com"
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "petstore.swagger.io"
-basePath: "/v2"
+host: "api.divseekcanada.ca"
+basePath: "/v1"
 schemes:
 - "https"
 - "http"
